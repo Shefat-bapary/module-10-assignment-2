@@ -1,0 +1,137 @@
+/* font style  */
+* {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+}
+
+main {
+    margin: 0 14%;
+}
+
+/* primary style */
+.primary-button {
+    background-color: orange;
+    border: 0;
+    border-radius: 5px;
+    padding: 14px;
+    color: #FFF;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* full header  style*/
+header {
+    background: rgba(255, 144, 14, 0.10);
+}
+
+/* -----------nav style-------------- */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: var(--Dark-01, #131313);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+}
+
+/* -----------------------------
+            header banner
+-------------------------------- */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin: 0 14%;
+}
+
+header .banner img {
+    width: 100%;
+}
+
+.banner h2 {
+    font-size: 54px;
+    font-weight: 2;
+}
+
+.banner p {
+    padding: 2% 24%;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+/*  feature section */
+.feature-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.feature-img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.feature-img-container img {
+    width: 100%;
+}
+
+.feature-section h1 {
+    font-weight: 400;
+    font-size: 44px;
+}
+
+.feature-section p {
+    font-size: 15px;
+    font-weight: 200;
+    margin: 15px 0;
+}
+
+.feature-title-quick-list {
+    color: #727272;
+}
+
+.feature-title-orange {
+    color: orange;
+}
+
+
+/* Media quae  */
+
+@media screen and (max-width:576px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+}
